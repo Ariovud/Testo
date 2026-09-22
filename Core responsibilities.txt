@@ -1,0 +1,136 @@
+Core responsibilities
+
+Design, implement, and maintain identity and access controls across Microsoft Entra ID (Azure AD), hybrid Active Directory, and connected SaaS applications
+Build and tune Conditional Access policies enforcing device compliance, risk-based sign-in controls, and MFA enforcement aligned to Zero Trust principles (never trust, always verify, assume breach)
+Manage Privileged Identity Management (PIM), including just-in-time role activation, access reviews, and eligible vs. active role assignments for privileged accounts
+Own the lifecycle of identity governance: joiner-mover-leaver processes, automated provisioning/deprovisioning via SCIM, and periodic access certification campaigns
+Administer and harden Active Directory and Entra Connect/hybrid sync where applicable, including monitoring for sync errors and attribute drift
+Support incident response for identity-related security events: compromised accounts, anomalous sign-ins, token theft, privilege escalation attempts
+Maintain break-glass account procedures, credential rotation schedules, and emergency access protocols
+Document architecture decisions, exceptions, and policy rationale so institutional knowledge doesn't walk out the door with the next departure
+Support audit and compliance requirements (SOX, ISO 27001, CISM-aligned control frameworks) by producing evidence for access reviews and control testing
+Collaborate with app owners on secure onboarding of new applications, including SSO/SAML/OIDC federation and least-privilege role design
+
+Required qualifications
+
+3+ years hands-on experience in identity and access management, ideally in a Microsoft-centric enterprise environment
+Solid understanding of Zero Trust architecture principles and how identity enforces them in practice, not just theory
+Experience with Entra ID (Azure AD), Conditional Access, and PIM
+Working knowledge of on-prem Active Directory, Group Policy, and hybrid identity (Entra Connect)
+Understanding of authentication/authorization protocols: SAML, OAuth 2.0, OIDC, SCIM
+Familiarity with least privilege, RBAC/ABAC models, and access certification workflows
+
+Preferred qualifications
+
+CISM, CISSP, SC-300 (Identity and Access Administrator), or equivalent certification
+Experience with third-party IGA platforms (SailPoint, Saviynt, or similar)
+Scripting ability (PowerShell, Microsoft Graph API) for automation of provisioning and reporting
+Prior incident response experience involving identity compromise
+
+
+Core responsibilities
+
+Administer and maintain hybrid identity infrastructure: on-prem Active Directory (OUs, Group Policy, replication health) and Microsoft Entra ID, kept in sync via Entra Connect
+Build, test, and maintain Conditional Access policies in Entra ID aligned to Zero Trust principles (verify explicitly, use least privilege, assume breach)
+Manage user lifecycle processes end to end: joiner-mover-leaver automation, group-based access assignment, and periodic access reviews within Entra ID's native governance tools (Access Reviews, Entitlement Management)
+Support privileged account operations through Delinea PAM, including vault onboarding of privileged accounts, session monitoring, and coordinating credential rotation schedules with the security team
+Write and maintain PowerShell scripts and Microsoft Graph API automation for provisioning, deprovisioning, reporting, and routine identity hygiene tasks
+Monitor AD and Entra ID for sync errors, orphaned accounts, stale permissions, and attribute drift, and remediate proactively
+Assist with incident response for identity-related events: suspicious sign-ins, account lockouts, potential compromise, escalating to senior IAM/security staff when needed
+Maintain accurate documentation of AD/Entra ID configurations, script logic, and exceptions, so operational knowledge is captured, not just held by one person
+Support audit evidence collection for access reviews and control testing on IAM-related requests
+
+Required qualifications
+
+2+ years hands-on experience in an IT infrastructure, systems administration, or IAM-adjacent role
+Working knowledge of on-prem Active Directory (user/group management, OU structure, Group Policy basics)
+Familiarity with Microsoft Entra ID: user/group administration, basic Conditional Access concepts, hybrid sync fundamentals
+Solid scripting ability in PowerShell, comfortable writing and troubleshooting automation scripts independently
+Understanding of least privilege and basic access control concepts (this can be conceptual, doesn't need to be deep architecture-level)
+
+Preferred qualifications
+
+Exposure to any PAM/vaulting tool (Delinea, CyberArk, BeyondTrust, or similar), doesn't need to be Delinea specifically, concepts transfer
+Microsoft Graph API experience
+SC-300 (Identity and Access Administrator) or working toward it
+Basic understanding of SAML/OAuth/OIDC, even at a conceptual level
+
+
+
+
+
+
+Identity and Access Management Engineer
+
+Hybrid Microsoft Environment
+About the Role
+
+This position owns the full identity and access stack in a Microsoft-centric hybrid estate. You design implement and keep identity controls healthy across Microsoft Entra ID on-premises Active Directory and the SaaS applications that connect to them. The work sits at the intersection of architecture and daily operations. Zero Trust is not a slogan here. It is the operating model.
+
+Key Responsibilities
+
+Conditional Access sits at the center of the job. Policies are built tested and tuned so device compliance risk-based sign-in and multifactor authentication actually enforce the principles of never trust always verify and assume breach. Privileged Identity Management receives the same focus. Just-in-time activation access reviews and the clean split between eligible and active assignments for privileged accounts are maintained without exception.
+
+Identity governance runs end to end. Joiner-mover-leaver processes are automated wherever possible. Group-based access assignment is kept current. Periodic access certification campaigns are driven through Entra ID native tools or entitlement management. Hybrid infrastructure does not get ignored. Active Directory organizational units Group Policy replication health and Entra Connect sync are monitored daily. Sync errors orphaned accounts stale permissions and attribute drift are found and fixed before they become incidents.
+Privileged accounts are handled through the organization’s PAM platform currently Delinea. Vault onboarding session monitoring and coordinated credential rotation with the security team form part of the regular workload. PowerShell and Microsoft Graph API scripts form the daily automation layer for provisioning deprovisioning reporting and routine identity hygiene. When identity-related security events appear compromised accounts anomalous sign-ins token theft or privilege escalation attempts this role supports the response and escalates cleanly when the scope grows.
+
+Break-glass accounts emergency access protocols and credential rotation schedules stay documented and tested. Architecture decisions exceptions and policy rationale are written down so the knowledge does not leave with any single person. Audit and compliance requests whether SOX ISO 27001 or CISM-aligned frameworks receive timely evidence packages for access reviews and control testing. New applications are onboarded in partnership with application owners covering SSO federation through SAML OIDC or OAuth 2.0 and least-privilege role design from the start.
+
+Required Qualifications
+
+Candidates need at least three years of hands-on identity and access management experience in a Microsoft-centric enterprise setting or a strong two-plus-year track in infrastructure or systems administration that already includes deep Active Directory work and independent PowerShell scripting. Practical understanding of Zero Trust architecture is required not the slide-deck version. Direct experience with Entra ID Conditional Access and Privileged Identity Management is expected along with working knowledge of on-premises Active Directory Group Policy and hybrid sync. Familiarity with authentication and authorization protocols such as SAML OAuth 2.0 OIDC and SCIM is necessary as is comfort with least-privilege models and access certification workflows.
+
+
+Final Integrated Job Description: IAM Engineer
+
+Title: Identity and Access Management (IAM) Engineer
+Reports to: IAM Team Lead / Security Architecture Manager
+Location: [Onsite / Hybrid / Remote]
+Employment type: Full-time
+
+About the role
+
+We're looking for an IAM Engineer to join our security engineering team, replacing a team member transitioning out in November. This role owns day-to-day identity operations across our hybrid environment: on-prem Active Directory, Microsoft Entra ID, and privileged access managed through Delinea PAM. You'll work hands-on with scripting and automation as much as with policy configuration, support IAM incidents and 2nd-line troubleshooting, and contribute to how our Identity Lifecycle Management processes evolve.
+
+Exciting work is waiting for you
+
+Participate in the design and ongoing improvement of Identity Lifecycle Management (joiner-mover-leaver, JIT access) processes
+Build, maintain, and support IAM/PAM services for SSO and MFA across on-prem AD and Entra ID
+Build, test, and maintain Conditional Access policies aligned to Zero Trust principles (verify explicitly, least privilege, assume breach)
+Provide 2nd-line support for IAM, identity systems, and federation services, troubleshooting issues through to resolution or escalation
+Support privileged account operations through Delinea PAM: vault onboarding, session monitoring, coordinating credential rotation with the security team
+Write and maintain PowerShell scripts (AD module, Microsoft Graph, REST) using secure scripting practices: proper error handling, logging, retry logic, and idempotency, so scripts fail safely and predictably
+Implement changes through ICT change management procedures, including ServiceNow-based request, approval, execution, and closure workflows
+Handle IAM incident management and user access management requests end to end
+Maintain accurate, current documentation for all IAM/PAM processes, configurations, and scripts
+Monitor AD and Entra ID for sync errors, orphaned accounts, stale permissions, and attribute drift, and remediate proactively
+Contribute to continuous evaluation of IAM services and processes, flagging improvement opportunities to the IAM lead
+Provide day-to-day IAM guidance to IT colleagues and business stakeholders on access requests and process questions
+Participate in cybersecurity-enhancing activities and cross-organizational access management initiatives where relevant
+
+Things we'll look for on your resume
+
+2+ years hands-on experience working with IAM products, processes, or services
+Working knowledge of on-prem Active Directory (user/group management, OU structure, Group Policy basics) and Microsoft Entra ID (user/group administration, Conditional Access fundamentals, hybrid sync basics)
+Comfort with core IAM/IT terminology: RBAC, LDAP, SSO, MFA, JML, JIT
+Solid PowerShell scripting ability, including the AD module and Microsoft Graph API, with an understanding of secure scripting practices (error handling, logging, idempotent design)
+Understanding of least privilege and basic access control concepts
+Familiarity with ITIL-based change, configuration, and release management, and comfort working within a formal ticketing/change system (ServiceNow or similar)
+Basic familiarity with Git and code review practices for script version control
+
+Advantageous
+
+Exposure to a PAM/vaulting tool (Delinea, CyberArk, BeyondTrust, or similar)
+Knowledge of federation and sign-in protocols (SAML, OAuth, WS-Fed) at a conceptual level
+SC-300 (Identity and Access Administrator), or working toward it
+Basic understanding of ADFS or Azure MFA administration
+
+As a person
+
+You're friendly, proactive, and self-motivated, with a strong user orientation. You take ownership of your own tasks, communicate clearly with both technical peers and non-technical stakeholders, and you're comfortable operating in a fast-changing technology environment. You document what you build instead of leaving it as tribal knowledge for the next person to untangle.
+
+What we're not looking for
+
+A senior architect, an MIM administrator, or a SailPoint specialist. If your environment doesn't currently run those systems, don't advertise for them, it wastes your time and the candidate's.
+
+
