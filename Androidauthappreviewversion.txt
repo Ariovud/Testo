@@ -1,0 +1,34 @@
+Install-Module Microsoft.Graph.Authentication, Microsoft.Graph.Beta.Reports -Scope CurrentUser
+Connect-MgGraph -Scopes "AuditLog.Read.All","Directory.Read.All" -NoWelcome
+
+$start   = (Get-Date).ToUniversalTime().AddDays(-7).ToString("yyyy-MM-ddTHH:mm:ssZ")
+$patched = [version]"6.2606.4246"   # confirm against the advisory
+$seen = 0
+
+$rows = Get-MgBetaAuditLogSignIn -Filter "createdDateTime ge $start" -All -PageSize 1000 |
+  ForEach-Object {
+    $d = $_.AuthenticationAppDeviceDetails
+    if ($d) {
+      $script:seen++
+      if ($d.OperatingSystem -match "Android") {
+        $v = $null
+        $ok = [version]::TryParse($d.AppVersion, [ref]$v)
+        [pscustomobject]@{
+          UserPrincipalName = $_.UserPrincipalName
+          CreatedDateTime   = $_.CreatedDateTime
+          DeviceId          = $d.DeviceId
+          AppVersion        = $d.AppVersion
+          Parsed            = $ok
+          Vulnerable        = ($ok -and $v -lt $patched)
+        }
+      }
+    }
+  }
+
+"Sign-ins with app details: $seen"
+
+$latest = $rows | Sort-Object CreatedDateTime -Descending |
+  Group-Object UserPrincipalName, DeviceId | ForEach-Object { $_.Group[0] }
+
+$latest | Where-Object { $_.Vulnerable -or -not $_.Parsed } |
+  Export-Csv .\android-auth-app-review.csv -NoTypeInformation
